@@ -15,6 +15,6 @@ Photos are from **Unsplash.com**.
 
 - Using a modal window.
 - Implementing a Lightbox feature (image pop up).
-- Using version control with Git and Github through VS Code extension. (Not terminal commands)
+- Using version control with Git and Github through VS Code extension and terminal
 - Contact form doesn't send anything on purpose.
 - Made a back-to-top button (for desktop).
