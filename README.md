@@ -1,20 +1,17 @@
-# Nenillo-Photography
+# Original project:
+Repo: https://github.com/remuollinen/nenillo-photography/tree/main?tab=readme-ov-file
+Page: https://nenillophotography.netlify.app/
+Features:
+- Lightbox: when click on image, full version pops up in a modal window.
+- Back-to-top button for desktop.
 
-A photographer website (not actual photographer) to display my skills.
-
-Visit the page at https://nenillophotography.netlify.app/
-
-The purpose of this website is to display my current coding skills.
-The technologies used in this project include **HTML, CSS** and **JavaScript**.
-
-Includes a lightbox feature: when you click on an image, the full version of the image pops up. (No slideshow feature)
-
-Photos are from **Unsplash.com**.
-
-## What I learned
-
-- Using a modal window.
-- Implementing a Lightbox feature (image pop up).
-- Using version control with Git and Github through VS Code extension and terminal
-- Contact form doesn't send anything on purpose.
-- Made a back-to-top button (for desktop).
+# Features I added:
+- Project carousel: User can browse projects in an infinite-looping carousel.
+- Slideshow: When click on project thumbnail, a modal window pops up, user can brows photos in that project like a slideshow.
+- Gridview: When click on 'Grid', user will see all photos in the project displayed in an Instagram-like grid.
+- Additional image-viewing UI/UX:
+    + Exit button for modal window
+    + Background toggle between 3 colors: white, gray, black
+    + Image counter for slideshow view
+- Image download protection: Disabled right-click on <img> elements to discourage image theft.
+- Lazy loading: Use IntersectionObserver API to load <img> elements only when they're about to enter viewport.
