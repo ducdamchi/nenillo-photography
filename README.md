@@ -1,5 +1,6 @@
 # Original project:
-Repo: https://github.com/remuollinen/nenillo-photography/tree/main?tab=readme-ov-file\\
+Repo: https://github.com/remuollinen/nenillo-photography/tree/main?tab=readme-ov-file  
+
 Page: https://nenillophotography.netlify.app/
 Features:
 - Lightbox: when click on image, full version pops up in a modal window.
