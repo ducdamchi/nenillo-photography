@@ -316,7 +316,7 @@ body {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  z-index: 10000;
+  z-index: 1000;
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.5s ease;
@@ -452,3 +452,251 @@ body {
     pointer-events: none;
   }
 } ;
+
+:root {
+  --slider-padding: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.slider {
+  --slider-index: 1;
+  display: flex;
+  width: calc(100% - 2 * var(--slider-padding));
+  transform: translateX(calc(var(--slider-index) * -100%));
+  transition: transform 300ms ease-in-out;`
+}
+
+.album {
+  /* inline-size: 100%; */
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0.25rem;
+  justify-content: center;
+}
+
+.img-album {
+  inline-size: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 150ms linear;
+  padding: 0.25rem;
+}
+
+.album .img-album:hover {
+  /* transform: scale(1.1); */
+  opacity: 0.85;
+  padding: 0rem;
+  /* border: 2.5px solid black; */
+  box-shadow: 3px 3px 3px -3px;
+}
+
+.handle {
+  flex-grow: 0;
+  width: var(--slider-padding);
+  background-color:  rgba(238, 238, 238, 1);
+  z-index: 10;
+  margin: 0 0 .35rem 0rem;
+
+  border: none;
+  /* border-radius: 0.25rem; */
+
+  font-size: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: background-color 150ms ease-in-out;
+}
+
+.left-handle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.right-handle {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.container:hover .handle {
+  background-color:  rgba(238, 238, 238, 0.5);
+}
+
+.handle:hover {
+  background-color:  rgba(238, 238, 238, 0.5);
+}
+
+.handle:hover .arrow {
+  transform: scale(1.2);
+  /* color: rgb(100, 13, 13); */
+}
+
+.arrow {
+  transition: transform 150ms ease-in-out;
+}
+
+.modal-viewer-white {
+  --bg-color: 0;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 1001;
+  display: none;
+}
+
+.modal-viewer-gray {
+  --bg-color: 0;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background: rgba(125, 125, 125, 0.9);
+  width: 100%;
+  z-index: 1001;
+  display: none;
+}
+
+.modal-viewer-black {
+  --bg-color: 0;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  z-index: 1001;
+  display: none;
+}
+
+
+.modal-close button {
+  position: fixed;
+  top: 50px;
+  right: -500px;
+  color: black;
+  font-size: 2rem;
+  z-index: 1002;
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+.modal-switchbg button {
+  position: fixed;
+  top: 100px;
+  right: -500px;
+  color: black;
+  font-size: 2rem;
+  z-index: 1002;
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+
+.modal-grid button {
+  position: fixed;
+  top: 150px;
+  right: -500px;
+  color: black;
+  font-size: 2rem;
+  z-index: 1002;
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+.modal-counter {
+  position: fixed;
+  top: 200px;
+  right: -500px;
+  color: black;
+  font-size: 2rem;
+  z-index: 1002;
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+.modal-grid:hover .grid, .modal-switchbg:hover .switch {
+  color: white;
+}
+
+.switch, .grid {
+  transition: color 150ms ease-in-out;
+}
+
+.gallery-box-class {
+  display: none;
+  z-index: 1010;
+}
+
+.gallery {
+  position: fixed;
+  top: 15vh;
+  left: 15vw;
+  margin: auto;
+  /* display: flex; */
+  width: 70%;
+  overflow: hidden;
+  z-index: 1010;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  z-index: 1010;
+}
+
+.slides img.displaySlide {
+  display: block;   
+  z-index: 1010;      
+}
+
+.gallery-single button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  background: none;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.prev {
+  left: 0;
+  z-index: 1010;
+}
+
+.next {
+  right: 0;
+  z-index: 1010;
+}
+
+.gallery-grid {
+  display: none;
+}
+
+.gallery-grid .posts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 450px));
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.gallery-grid .posts img {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  /* vertical-align: top; */
+}

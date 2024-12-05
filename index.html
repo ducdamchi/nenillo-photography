@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Nenillo Photography</title>
+    <title>Photography</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,64 +18,66 @@
   </head>
   <body>
     <div class="header">
-      <h1 class="title">Nenillo Photography</h1>
+      <h1 class="title">Photography</h1>
     </div>
       <div class="navbar">
         <div class="link-wrapper">
-          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#portfolio" class="nav-link">Gallery</a>
           <a href="#services" class="nav-link">Services</a>
           <a href="#contact" class="nav-link">Contact</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          
         </div>
       </div>
 
 <!-- Portfolio -->
 
     <section id="portfolio" class="section portfolio">
-      <h2 class="section-header">Portfolio</h2>
+      <h2 class="section-header">Gallery</h2>
       <div class="grid__container">
         <div id="item1" class="grid__item">
           <img
             class="img-small"
-            src="images/img1.jpg"
+            data-src="images/img1.jpg"
             alt="portrait with leaves"
           />
         </div>
         <div id="item2" class="grid__item">
-          <img class="img-small" src="images/img2.jpg" alt="food" />
+          <img class="img-small" data-src="images/img2.jpg" alt="food" />
         </div>
         <div id="item3" class="grid__item">
-          <img class="img-small" src="images/img3.jpg" alt="space" />
+          <img class="img-small" data-src="images/img3.jpg" alt="space" />
         </div>
         <div id="item4" class="grid__item">
-          <img class="img-small" src="images/img4.jpg" alt="mountain" />
+          <img class="img-small" data-src="images/img4.jpg" alt="mountain" />
         </div>
         <div id="item5" class="grid__item">
-          <img class="img-small" src="images/img5.jpg" alt="buildings" />
+          <img class="img-small" data-src="images/img5.jpg" alt="buildings" />
         </div>
         <div id="item6" class="grid__item">
           <img
             class="img-small"
-            src="images/img6.jpg"
+            data-src="images/img6.jpg"
             alt="woman lifting weights"
           />
         </div>
         <div id="item7" class="grid__item">
-          <img class="img-small" src="images/img7.jpg" alt="books" />
+          <img class="img-small" data-src="images/img7.jpg" alt="books" />
         </div>
         <div id="item8" class="grid__item">
-          <img class="img-small" src="images/img8.jpg" alt="coffee shop" />
+          <img class="img-small" data-src="images/img8.jpg" alt="coffee shop" />
         </div>
         <div id="item9" class="grid__item">
-          <img class="img-small" src="images/img9.jpg" alt="movies" />
+          <img class="img-small" data-src="images/img9.jpg" alt="movies" />
         </div>
         <div id="item10" class="grid__item">
-          <img class="img-small" src="images/img10.jpg" alt="street" />
+          <img class="img-small" data-src="images/img10.jpg" alt="street" />
         </div>
         <div id="item11" class="grid__item">
-          <img class="img-small" src="images/img11.jpg" alt="flowers" />
+          <img class="img-small" data-src="images/img11.jpg" alt="flowers" />
         </div>
         <div id="item12" class="grid__item">
-          <img class="img-small" src="images/img12.jpg" alt="drinks" />
+          <img class="img-small" data-src="images/img12.jpg" alt="drinks" />
         </div>
       </div>
     </section>
@@ -89,7 +91,7 @@
         <div class="services-list">
           <div id="service-item1" class="service-item">
             <img
-              src="https://source.unsplash.com/464ps_nOflw"
+              data-src="https://source.unsplash.com/464ps_nOflw"
               alt="couple holding hands"
             />
           </div>
@@ -103,7 +105,7 @@
           </div>
           <div id="service-item3" class="service-item">
             <img
-              src="https://source.unsplash.com/XHVpWcr5grQ"
+              data-src="https://source.unsplash.com/XHVpWcr5grQ"
               alt="portrait of a man"
             />
           </div>
@@ -116,7 +118,7 @@
             </p>
           </div>
           <div id="service-item5" class="service-item">
-            <img src="https://source.unsplash.com/2cFZ_FB08UM" alt="watches" />
+            <img data-src="https://source.unsplash.com/2cFZ_FB08UM" alt="watches" />
           </div>
           <div id="service-item6" class="service-item">
             <h4>Product Photography</h4>
@@ -128,6 +130,51 @@
           </div>
         </div>
       </div>
+    </section>
+
+<!-- Projects -->
+
+    <section id="projects" class="section projects">
+      <h2 class="section-header">Projects</h2>
+
+      <div class="container">
+        <button id="moveLeft" class="handle left-handle">
+          <div class="arrow">&#8249;</div>
+        </button>
+        <div class="slider">
+          <div class="album">
+            <img class="img-album" data-src="photography/ex1/img5.jpg" onclick="display_modal()">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex2/img9.jpg">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex3/img1.JPG">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex4/img1.JPG">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex5/img1.png">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex6/img1.JPG">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex7/img1.JPG">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex8/img1.JPG">
+          </div>
+          <div class="album">
+            <img class="img-album" data-src="photography/ex9/img1.JPG">
+          </div>
+        </div>
+        <button id="moveRight" class="handle right-handle">
+          <div class="arrow">&#8250;</div>
+        </button>
+      </div>
+
     </section>
 
 <!-- Contact -->
@@ -184,8 +231,54 @@
       <div class="modal-content"></div>
     </div>
 
+    <div id="modal-viewer" class="modal-viewer-white">
+      <div class="modal-close">
+        <button class="close" onclick="close_modal()">X</button>
+      </div>
+      <div class="modal-switchbg">
+        <button class="switch" onclick="changeBgColor()">BG</button>
+      </div>
+      <div class="modal-counter" id="modal-counter">1 / 5</div>
+      <div class="modal-grid">
+        <button id="modal-grid-button" class="grid" onclick="toggleGrid()">Grid</button>
+      </div>
+  </div>
+
+  <!-- Gallery View -->
+  <section id="gallery-box" class="gallery-box-class">
+
+    <div class="gallery">
+
+      <div id="gallery-single" class="gallery-single">
+        <button class="prev" onclick="prevSlide()">&#8249;</button>
+        <div class="slides">
+          <img class="slide" data-src="photography/ex1/img1.jpg">
+          <img class="slide" data-src="photography/ex1/img2.jpg">
+          <img class="slide" data-src="photography/ex1/img3.jpg">
+          <img class="slide" data-src="photography/ex1/img4.jpg">
+          <img class="slide" data-src="photography/ex1/img5.jpg">
+        </div>
+        <button class="next" onclick="nextSlide()">&#8250;</button>
+      </div>
+
+      <div id="gallery-grid" class="gallery-grid">
+        <div class="posts">
+          <img class="post" data-src="photography/ex1/img1.jpg">
+          <img class="post" data-src="photography/ex1/img2.jpg">
+          <img class="post" data-src="photography/ex1/img3.jpg">
+          <img class="post" data-src="photography/ex1/img4.jpg">
+          <img class="post" data-src="photography/ex1/img5.jpg">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
     <!-- Back to top button -->
-      <img class="back-to-top" src="images/back-to-top-arrow.svg" alt="arrow to top">
+      <img class="back-to-top" data-src="images/back-to-top-arrow.svg" alt="arrow to top">
   
   </body>
 </html>
